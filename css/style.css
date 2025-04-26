@@ -1,0 +1,33 @@
+body {
+    background-color: #f0f0f0; /* light gray */
+  }
+  
+.about-page .profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .profile-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  
+  .bio {
+    max-width: 600px;
+  }
+  
+  .bio h1 {
+    margin-top: 0;
+    font-size: 2em;
+  }
+  
+  .bio p {
+    font-size: 1.1em;
+    line-height: 1.6;
+  }
+  
