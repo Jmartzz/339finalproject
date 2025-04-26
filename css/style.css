@@ -251,27 +251,49 @@ header.major h2 {
     color: #000000; /* darker green for better contrast */
   }
   .contact-form-container {
-    background-color: #f2f2f2;
+    background-color: #7f92ee;
     padding: 30px;
     border-radius: 10px;
   }
   input[type=text], input[type=email], textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #101010;
     border-radius: 4px;
     resize: vertical;
     margin-top: 6px;
     margin-bottom: 16px;
   }
   input[type=submit] {
-    background-color: #4acaa8;
-    color: white;
+    background-color: #ffffff;
+    color: rgb(11, 11, 11);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
   input[type=submit]:hover {
-    background-color: #25ffd0;
+    background-color: #000000;
   }
+  input[type=submit] {
+    background-color: #7bf1c2;  /* Dark teal */
+    color: #000000;             /* Black text for 21:1 contrast */
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  
+  input[type=submit]:hover {
+    background-color: #0e0f0f;  /* hover effect */
+  }
+  
+  input[type=submit] {
+    background-color: #21685c; /* darker teal */
+    color: #ffffff;
+  }
+  
+
+  /*Help help from chatgbt to help format styles*/
