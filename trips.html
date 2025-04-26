@@ -1,68 +1,182 @@
 <!DOCTYPE HTML>
-<html>
-<head>
-  <title>Trips – Joel Martinez</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-<body class="is-preload">
-
-  <!-- Sidebar -->
-  <section id="header">
-    <header>
-      <span class="image avatar"><img src="images/me_pic.png" alt="Joel's Photo" /></span>
-      <h1 id="logo"><a href="#">Joel Martinez</a></h1>
-      <p>A typical engineering student at Umich</p>
-    </header>
-    <nav id="nav">
-      <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="trips.html" class="active">Trips</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <footer>
-      <ul class="icons">
-        <li><a href="https://github.com/your-username" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-        <li><a href="mailto:youremail@example.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
-      </ul>
-    </footer>
-  </section>
-
-  <!-- Main Content -->
-  <div id="wrapper">
-    <div id="main">
-      <section id="trips">
-        <div class="container">
-          <header class="major">
-            <h2>My trips</h2>
-            <p>Recent trip: Death Valley 2025</p>
-          </header>
-
-          <div class="gallery-grid">
-            <img src="images/trip1.jpg" alt="Trip 1">
-            <img src="images/trip2.jpg" alt="Trip 2">
-            <img src="images/trip3.jpg" alt="Trip 3">
-            <img src="images/trip4.jpg" alt="Trip 4">
-            <img src="images/trip5.jpg" alt="Trip 5">
-            
-          </div>
-
-        </div>
-      </section>
-    </div>
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="container">
-        <ul class="copyright">
-          <li>&copy; 2025 Joel Martinez</li>
-        </ul>
+<html lang="en">
+   <head>
+      <title>Trips – Joel Martinez</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/style.css">
+   </head>
+   <main id="main"></main>
+   <body class="is-preload">
+    
+      
+      <!-- Sidebar -->
+      <header role="banner">
+         <section id="header">
+            <header>
+               <span class="image avatar"><img src="images/me_pic.png" alt="Joel's Photo" /></span>
+               <h1 id="logo"><a href="#">Joel Martinez</a></h1>
+               <p>A typical engineering student at Umich</p>
+            </header>
+            <nav id="nav">
+               <ul>
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="trips.html" class="active">Trips</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+               </ul>
+            </nav>
+            <footer>
+               <ul class="icons">
+                  <li><a href="https://github.com/jmartzz" class="icon brands fa-github" aria-label="GitHub" target="_blank">
+                     <span class="label">GitHub</span>
+                     <img src="images/github-mark.png" alt="GitHub" style="width: 24px; height: 24px; border-radius: 4px;" />
+                     </a>
+                  </li>
+               </ul>
+            </footer>
+         </section>
+         <!-- Main Content -->
+         <!-- FIXED -->
+         
+            <div id="wrapper">
+               <section id="trips">
+                  <div class="container">
+                     <!-- Main Trip -->
+                     <header class="major">
+                        <h2>My trips</h2>
+                        <p>Recent trip: Death Valley 2025</p>
+                     </header>
+                     <div class="slideshow-container">
+                        <div class="mySlides">
+                           <img src="images/trip1.jpg"  alt="Photo of me at Death Valley" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                           <img src="images/trip2.jpg" alt="Photo of me at Death Valley" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                           <img src="images/trip3.jpg"alt="Photo of me at Death Valley"  style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                           <img src="images/trip4.jpg" alt="Photo of me at Death Valley" style="width:100%">
+                        </div>
+                        <div class="mySlides">
+                           <img src="images/trip5.jpg" alt="Photo of me at Death Valley" style="width:100%">
+                        </div>
+                        <!-- Nav Buttons -->
+                        <a class="prev" onclick="plusSlides(-1)" role="button" aria-label="Previous slide">❮</a>
+                        <a class="next" onclick="plusSlides(1)" role="button" aria-label="Next slide">❯</a>
+                        <div class="row">
+                           <div class="column">
+                              <img class="demo cursor" src="images/trip1.jpg" alt="Photo of me at Death Valley" style="width:100%" onclick="currentSlide(1)" alt="Trip 1">
+                           </div>
+                           <div class="column">
+                              <img class="demo cursor" src="images/trip2.jpg"alt="Photo of me at Death Valley" style="width:100%" onclick="currentSlide(2)" alt="Trip 2">
+                           </div>
+                           <div class="column">
+                              <img class="demo cursor" src="images/trip3.jpg" alt="Photo of me at Death Valley"style="width:100%" onclick="currentSlide(3)" alt="Trip 3">
+                           </div>
+                           <div class="column">
+                              <img class="demo cursor" src="images/trip4.jpg" alt="Photo of me at Death Valley"style="width:100%" onclick="currentSlide(4)" alt="Trip 4">
+                           </div>
+                           <div class="column">
+                              <img class="demo cursor" src="images/trip5.jpg" alt="Photo of me at Death Valley"style="width:100%" onclick="currentSlide(5)" alt="Trip 5">
+                           </div>
+                        </div>
+                        <!-- Other Adventures -->
+                        <header class="major" style="margin-top: 60px;">
+                           <h2>Other Adventures</h2>
+                           <p>Highlights from Sleeping Bear Dunes.</p>
+                        </header>
+                        <div class="small-slideshow-container">
+                           <div class="smallSlides"><img src="images/sleep_bears1.jpg" alt="Photo of me at Sleeping Bears"></div>
+                           <div class="smallSlides"><img src="images/sleep_bears2.jpg" alt="Photo of me at Sleeping Bears"></div>
+                           <div class="smallSlides"><img src="images/sleep_bears3.jpg"alt="Photo of me at Sleeping Bears"></div>
+                           <div class="smallSlides"><img src="images/sleep_bears4.jpg"alt="Photo of me at Sleeping Bears"></div>
+                           <div class="smallSlides"><img src="images/sleep_bears5.jpg"alt="Photo of me at Sleeping Bears"></div>
+                           <a class="small-prev" onclick="plusSmallSlides(-1)" role="button" aria-label="Previous photo">❮</a>
+                           <a class="small-next" onclick="plusSmallSlides(1)" role="button" aria-label="Next photo">❯</a>
+                           <div class="row">
+                              <div class="column">
+                                 <img class="demo cursor" src="images/sleep_bears1.jpg" alt="Photo of me at Sleeping Bears"style="width:100%" onclick="currentSlide(1)" alt="Trip 1">
+                              </div>
+                              <div class="column">
+                                 <img class="demo cursor" src="images/sleep_bears2.jpg" alt="Photo of me at Sleeping Bears"style="width:100%" onclick="currentSlide(2)" alt="Trip 2">
+                              </div>
+                              <div class="column">
+                                 <img class="demo cursor" src="images/sleep_bears3.jpg" alt="Photo of me at Sleeping Bears"style="width:100%" onclick="currentSlide(3)" alt="Trip 3">
+                              </div>
+                              <div class="column">
+                                 <img class="demo cursor" src="images/sleep_bears4.jpg" alt="Photo of me at Sleeping Bears"style="width:100%" onclick="currentSlide(4)" alt="Trip 4">
+                              </div>
+                              <div class="column">
+                                 <img class="demo cursor" src="images/sleep_bears5.jpg" alt="Photo of me at Sleeping Bears"style="width:100%" onclick="currentSlide(5)" alt="Trip 5">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+               </section>
+               </div>
+         </main>
+         <!-- Footer -->
+         <section id="footer">
+         <div class="container">
+         <ul class="copyright">
+         <li>&copy; 2025 Joel Martinez</li>
+         </ul>
+         </div>
+         </section>
+      </header>
       </div>
-    </section>
-  </div>
-
-</body>
+      <!-- Scripts -->
+      <script>
+         // Main slideshow
+         let slideIndex = 1;
+         showSlides(slideIndex);
+         
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+         
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+         
+         function showSlides(n) {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("demo");
+           if (n > slides.length) { slideIndex = 1 }
+           if (n < 1) { slideIndex = slides.length }
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex - 1].style.display = "block";
+           dots[slideIndex - 1].className += " active";
+         }
+         
+         // Secondary slideshow
+         let smallSlideIndex = 1;
+         showSmallSlides(smallSlideIndex);
+         
+         function plusSmallSlides(n) {
+           showSmallSlides(smallSlideIndex += n);
+         }
+         
+         function showSmallSlides(n) {
+           let i;
+           let slides = document.getElementsByClassName("smallSlides");
+           if (n > slides.length) { smallSlideIndex = 1 }
+           if (n < 1) { smallSlideIndex = slides.length }
+           for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+           }
+           slides[smallSlideIndex - 1].style.display = "block";
+         }
+      </script>
+   </body>
 </html>
